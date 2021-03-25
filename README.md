@@ -1,3 +1,3 @@
 # MyPersonelProjectFrontend
 
-AngularClı / Html-Bootstrap-Css-Tpyescript
+Angular Clı / Html-Bootstrap-Css-Tpyescript
