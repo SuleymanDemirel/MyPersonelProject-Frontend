@@ -1,2 +1,3 @@
-# MyPersonelProject-Frontend
-AngularCLI
+# MyPersonelProjectFrontend
+
+Angular Clı / Html-Bootstrap-Css-Tpyescript
