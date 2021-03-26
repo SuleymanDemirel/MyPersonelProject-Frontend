@@ -74,6 +74,8 @@
 
 </table> -->
 
+
+
 <table class="table table-striped table-bordered table-hover table">
     <thead>
   
@@ -83,17 +85,25 @@
       </tr>
   </thead>
   </table>
+ 
+  <div *ngFor="let product of productImages let index = index" >
+            
+    <img class="d-block  w-100" src="{{path}}{{product.imagePath}}">
+    
+  </div>
+
   <div class="row row-cols-1 row-cols-md-2 g-4">
     <div class="col text-center" *ngFor="let product of productsDetail">
         <div class="card  ">
             <div style="text-align: center;">
-                <img src="https://ofisel.com/73308-big_default/xprime-plus-oyuncu-koltugu-turkuaz.jpg"
-                    width="300" height="300">
-
+                <!-- <img src="wwwroot/Images/{{product.imagePath}}" width="300" height="300"> -->
+                <img src="{{path}}{{product.imagePath}}" width="300" height="300"/>
             </div>
+
             <div class="card-body">
                 <p class="card-text "> <strong>{{product.productName |uppercase}}</strong></p>
                 <p><strong>{{product.description}}</strong></p>
+                
                 <div class="progress">
                     <div class="progress-bar progress-bar-striped" style="width:80%">80%</div>
                 </div>
@@ -103,10 +113,6 @@
                             :</strong></label>
                      <input type="text" class="form-control text-center " id="biletsayisi" placeholder="0" style=" align-items: center;">
                 </div>
-             
-                   
-                    
-             
                
                 <br>
                 <div class=" align-items-center">
