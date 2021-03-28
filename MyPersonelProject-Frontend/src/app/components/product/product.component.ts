@@ -17,7 +17,7 @@ export class ProductComponent implements OnInit {
   productsDetail:ProductDetails[]=[];
   productImages: ProductImage[] = [];
 
-   path : string = "https://localhost:44358/api/Wwwroot/Images/";
+   path : string = "https://localhost:44358/Images/";
    
   constructor( private productService:ProductService, private activatedRoute:ActivatedRoute,
     private productImageService:ProductImageService) { }

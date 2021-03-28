@@ -86,13 +86,11 @@
   </thead>
   </table>
  
-  <div *ngFor="let product of productImages let index = index" >
-            
-    <img class="d-block  w-100" src="{{path}}{{product.imagePath}}">
-    
-  </div>
 
-  <div class="row row-cols-1 row-cols-md-2 g-4">
+<div class="container text-center">
+
+
+  <div class="row row-cols-1 row-cols-md-2 g-4 text-center" >
     <div class="col text-center" *ngFor="let product of productsDetail">
         <div class="card  ">
             <div style="text-align: center;">
@@ -108,10 +106,12 @@
                     <div class="progress-bar progress-bar-striped" style="width:80%">80%</div>
                 </div>
                 <br>
-                <div class="form-group text-center">
-                    <label for="biletsayisi" class="labelrenk"> <strong>Bilet Sayısı
-                            :</strong></label>
-                     <input type="text" class="form-control text-center " id="biletsayisi" placeholder="0" style=" align-items: center;">
+                <div class="form-group  ">
+                    <label for="biletsayisi" class="labelrenk"> <strong>Bilet Sayısı :</strong></label>
+              
+                                <input type="text" class="form-control text-center " id="biletsayisi" placeholder="0" style=" align-items: center;">
+                            
+                     
                 </div>
                
                 <br>
@@ -128,4 +128,4 @@
       </div>
     </div>
 </div>
-
+</div>
