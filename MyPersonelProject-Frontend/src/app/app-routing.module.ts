@@ -1,12 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { IletisimComponent } from './components/iletisim/iletisim.component';
+import { LoginComponent } from './components/login/login.component';
 import { ProductComponent } from './components/product/product.component';
+import { LoginGuard } from './guards/login.guard';
 
 const routes: Routes = [
-  {path:"",pathMatch:"full",component:ProductComponent},
-  {path:"products",component:ProductComponent},
-  {path:"iletisim",component:IletisimComponent}
+  {path:"",pathMatch:"full",component:LoginComponent},
+  {path:"products",component:ProductComponent, canActivate:[LoginGuard]},
+  {path:"iletisim",component:IletisimComponent},
+  {path:"login", component:LoginComponent}
 ];
 
 @NgModule({
