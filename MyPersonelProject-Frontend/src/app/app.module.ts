@@ -13,6 +13,7 @@ import { IletisimComponent } from './components/iletisim/iletisim.component';
 import {ToastrModule} from "ngx-toastr";
 import { AuthInterceptor } from './interceptors/auth.interceptor';
 import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { LoginComponent } from './components/login/login.component';
     TopNavComponent,
     ProductComponent,
     IletisimComponent,
-    LoginComponent
+    LoginComponent,
+    RegisterComponent
 
   ],
   imports: [

@@ -1,0 +1,115 @@
+
+
+<body class="text-center col-md-3 container">
+    <main class="form-signin">
+      <form [formGroup]="registerForm">
+        <img
+          class="mb-4"
+          src="https://icons.iconarchive.com/icons/graphicloads/flat-finance/256/person-icon.png"
+          alt=""
+          width="72"
+          height="67"
+        />
+        <h1 class="h3 mb-3 fw-normal">Kayıt ol</h1>
+  
+        <div class="form-floating ">
+            <input
+            formControlName="firstName"
+              type="text"
+              class="form-control"
+              id="firstName"
+              placeholder="Süleyman"
+            />
+            <label for="firstName">Ad</label>
+          </div>
+          <div class="form-floating ">
+            <input
+            formControlName="lastName"
+              type="text"
+              class="form-control"
+              id="lastName"
+              placeholder="Demirel"
+            />
+            <label for="lastName">Soyad</label>
+          </div>
+        <div class="form-floating ">
+          <input
+          formControlName="email"
+            type="email"
+            class="form-control"
+            id="floatingInput"
+            placeholder="name@example.com"
+          />
+          <label for="floatingInput">E-posta</label>
+        </div>
+        <div class="form-floating ">
+          <input
+          formControlName="password"
+            type="password"
+            class="form-control"
+            id="floatingPassword"
+            placeholder="Password"
+          />
+          <label for="floatingPassword">Parola</label>
+        </div>
+  
+        <div class="checkbox mb-3">
+          <label>
+            <input type="checkbox" value="remember-me" /> Remember me
+          </label>
+        </div>
+        <button class="w-100 btn btn-lg btn-primary" (click)="register()">
+          Kayıt Ol
+        </button>
+        <p class="mt-5 mb-3 text-muted">&copy; 2021</p>
+      </form>
+    </main>
+  </body>
+
+
+<!-- <body class="text-center col-md-3 container">
+    <main class="form-signin">
+      <form [formGroup]="registerForm">
+        <img
+          class="mb-4"
+          src="https://icons.iconarchive.com/icons/graphicloads/flat-finance/256/person-icon.png"
+          alt=""
+          width="72"
+          height="67"
+        />
+        <h1 class="h3 mb-3 fw-normal">Giriş yap</h1>
+  
+        <div class="form-floating">
+          <input
+          formControlName="email"
+            type="email"
+            class="form-control"
+            id="floatingInput"
+            placeholder="name@example.com"
+          />
+          <label for="floatingInput">E-posta</label>
+        </div>
+        <div class="form-floating">
+          <input
+          formControlName="password"
+            type="password"
+            class="form-control"
+            id="floatingPassword"
+            placeholder="Password"
+          />
+          <label for="floatingPassword">Parola</label>
+        </div>
+  
+        <div class="checkbox mb-3">
+          <label>
+            <input type="checkbox" value="remember-me" /> Remember me
+          </label>
+        </div>
+        <button class="w-100 btn btn-lg btn-primary" (click)="login()">
+          Giriş yap
+        </button>
+        <p class="mt-5 mb-3 text-muted">&copy; 2021</p>
+      </form>
+    </main>
+  </body>
+   -->
