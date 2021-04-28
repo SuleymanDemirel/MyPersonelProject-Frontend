@@ -14,6 +14,14 @@ import {ToastrModule} from "ngx-toastr";
 import { AuthInterceptor } from './interceptors/auth.interceptor';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
+import { PanelComponent } from './components/panel/panel.component';
+import { LogOutComponent } from './components/log-out/log-out.component';
+import { FooterComponent } from './footer/footer.component';
+import { CategoryComponent } from './components/category/category.component';
+import { UserComponent } from './components/user/user.component';
+import { FilterProductsPipe } from './pipes/filter-products.pipe';
+import { FilterPipePipe } from './pipes/filter-pipe.pipe';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +30,14 @@ import { RegisterComponent } from './components/register/register.component';
     ProductComponent,
     IletisimComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    PanelComponent,
+    LogOutComponent,
+    FooterComponent,
+    CategoryComponent,
+    UserComponent,
+    FilterProductsPipe,
+    FilterPipePipe
 
   ],
   imports: [

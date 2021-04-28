@@ -13,7 +13,7 @@ import { environment } from 'src/environments/environment';
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent implements OnInit {
-
+  filterText="";
   productsDetail:ProductDetails[]=[];
   productImages: ProductImage[] = [];
 

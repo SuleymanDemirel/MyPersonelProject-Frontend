@@ -1,15 +1,17 @@
 .topnav {
     overflow: hidden;
     background-color: #333;
+    
 }
 
 .topnav a {
-    float: left;
+    float: right;
     color: #f2f2f2;
     text-align: center;
     padding: 17px 33px;
     text-decoration: none;
     font-size: 19px;
+  
 }
 
 .topnav a:hover {
@@ -20,4 +22,18 @@
 .topnav a.active {
     background-color: #4caf50;
     color: white;
+}
+
+
+
+
+.navbarsettings{
+ 
+ 
+  
+    padding: 15px 13px;
+    text-align: center;
+   
+    font-size: 19px;
+    text-decoration: none;
 }

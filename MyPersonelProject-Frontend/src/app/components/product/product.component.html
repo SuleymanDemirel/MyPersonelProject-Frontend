@@ -1,10 +1,31 @@
+<div class="mb-3"></div>
+<div class="card text-dark bg-white  mb-3 col-4"  >
+  
+    <div class="card-body">
+      <div class="row  ">
+    
+
+        <div class="  " style="float: left; ">
+          <label for="filterText" class="form-label"> <strong>Çekiliş ara:</strong> </label>
+          <input type="text" [(ngModel)]="filterText" class="form-control" id="filterText" placeholder="Ara..">
+        </div>
+        <div *ngIf="filterText" class="alert alert-primary" >
+          {{filterText}} aradınız..
+        </div>
+        
+
+        </div>
+     
+    </div>
+  </div>
+
 
 
 <table class="table table-striped table-bordered table-hover table">
     <thead>
   
-      <tr class="  text-center " style="background-color: #333">
-        <td COLSPAN="2" class="col-md-4" style="  color: white "> <strong>Ürünler</strong> </td>
+      <tr class="  text-center " style="background-color: rgb(29, 28, 28)">
+        <td COLSPAN="4" class="col-md-4" style="  color: white "> <strong>Ürünler</strong> </td>
         
       </tr>
   </thead>
@@ -13,9 +34,8 @@
 
 <div class="container text-center">
 
-
-  <div class="row row-cols-1 row-cols-md-2 g-4 text-center" >
-    <div class="col text-center" *ngFor="let product of productsDetail">
+  <div class="row g-4 text-center" >
+    <div class="col text-center" *ngFor="let product of productsDetail | filterPipe:filterText">
         <div class="card  ">
             <div style="text-align: center;">
                 <!-- <img src="wwwroot/Images/{{product.imagePath}}" width="300" height="300"> -->
@@ -34,8 +54,7 @@
                     <label for="biletsayisi" class="labelrenk"> <strong>Bilet Sayısı :</strong></label>
               
                                 <input type="text" class="form-control text-center " id="biletsayisi" placeholder="0" style=" align-items: center;">
-                            
-                     
+                                   
                 </div>
                
                 <br>
