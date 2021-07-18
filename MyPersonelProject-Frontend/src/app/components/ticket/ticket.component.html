@@ -1,0 +1,24 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th>userId </th>
+            <th>userName</th>
+            <th>productName</th>
+            <th>categoryName</th>
+            <th>numberOfTicketId </th>
+
+           
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let ticket of tickets">
+            <td>{{ticket.userId}}</td>
+            <td>{{ticket.userName}}</td>
+            <td>{{ticket.productName}}</td>
+            <td>{{ticket.categoryName}}</td>
+            <td>{{ticket.numberOfTicketId}}</td>
+        </tr>
+    </tbody>
+</table>
+

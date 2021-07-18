@@ -3,8 +3,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { IletisimComponent } from './components/iletisim/iletisim.component';
 import { LoginComponent } from './components/login/login.component';
 import { PanelComponent } from './components/panel/panel.component';
+import { ProductDetailComponent } from './components/product-detail/product-detail.component';
 import { ProductComponent } from './components/product/product.component';
 import { RegisterComponent } from './components/register/register.component';
+import { TicketComponent } from './components/ticket/ticket.component';
+import { UserComponent } from './components/user/user.component';
 import { LoginGuard } from './guards/login.guard';
 
 const routes: Routes = [
@@ -13,7 +16,10 @@ const routes: Routes = [
   {path:"iletisim",component:IletisimComponent},
   {path:"login", component:LoginComponent},
   {path:"register", component:RegisterComponent},
-  {path:"panel", component:PanelComponent}
+  {path:"panel", component:PanelComponent},
+  {path:"users", component:UserComponent},
+  {path:"tickets", component:TicketComponent},
+  {path:"products/products/productdetails/:id",component:ProductDetailComponent}
 ];
 
 @NgModule({

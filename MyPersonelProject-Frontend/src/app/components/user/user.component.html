@@ -1,1 +1,21 @@
-<p>user works!</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>isim </th>
+            <th>soyisim</th>
+            <th>mail</th>
+           
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users">
+            <td>{{user.id}}</td>
+            <td>{{user.firstName}}</td>
+            <td>{{user.lastName}}</td>
+            <td>{{user.email}}</td>
+            
+        </tr>
+    </tbody>
+</table>

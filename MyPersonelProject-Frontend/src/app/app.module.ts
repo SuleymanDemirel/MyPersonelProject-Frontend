@@ -21,6 +21,8 @@ import { CategoryComponent } from './components/category/category.component';
 import { UserComponent } from './components/user/user.component';
 import { FilterProductsPipe } from './pipes/filter-products.pipe';
 import { FilterPipePipe } from './pipes/filter-pipe.pipe';
+import { TicketComponent } from './components/ticket/ticket.component';
+import { ProductDetailComponent } from './components/product-detail/product-detail.component';
 
 
 @NgModule({
@@ -37,7 +39,9 @@ import { FilterPipePipe } from './pipes/filter-pipe.pipe';
     CategoryComponent,
     UserComponent,
     FilterProductsPipe,
-    FilterPipePipe
+    FilterPipePipe,
+    TicketComponent,
+    ProductDetailComponent
 
   ],
   imports: [

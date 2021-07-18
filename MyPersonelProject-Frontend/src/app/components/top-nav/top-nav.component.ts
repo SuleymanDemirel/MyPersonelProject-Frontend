@@ -56,6 +56,8 @@ export class TopNavComponent implements OnInit {
     this.router.navigate(['products']);
   }
 
-
+  ticketsRoute(){
+    this.router.navigate(['tickets']);
+  }
  
 }

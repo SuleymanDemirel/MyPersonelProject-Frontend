@@ -44,7 +44,7 @@
 
             <div class="card-body">
                 <p class="card-text "> <strong>{{product.productName |uppercase}}</strong></p>
-                <p><strong>{{product.description}}</strong></p>
+                <p><strong>Ürün ID :   {{product.productId}}</strong></p>
                 
                 <div class="progress">
                     <div class="progress-bar progress-bar-striped" style="width:80%">80%</div>
@@ -54,14 +54,14 @@
                     <label for="biletsayisi" class="labelrenk"> <strong>Bilet Sayısı :</strong></label>
               
                                 <input type="text" class="form-control text-center " id="biletsayisi" placeholder="0" style=" align-items: center;">
-                                   
+                                 
                 </div>
                
                 <br>
                 <div class=" align-items-center">
 
                     <div class="btn-group  ">
-                        <button type="button" class="btn btn-danger " style=" width: 150px;">
+                        <button routerLink="products/productdetails/{{product.productId}}" type="button" class="btn btn-danger " style=" width: 150px;">
                             <strong>Çekilişe Katıl</strong> </button>
 
                     </div>
@@ -72,3 +72,4 @@
     </div>
 </div>
 </div>
+

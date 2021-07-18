@@ -1,0 +1,112 @@
+<div class="mb-3"></div>
+
+
+<table class="table table-striped table-bordered table-hover table">
+    <thead>
+  
+      <tr class="  text-center " style="background-color: rgb(29, 28, 28)">
+        <td COLSPAN="4" class="col-md-4" style="  color: white "> <strong>Ürün</strong> </td>
+        
+      </tr>
+  </thead>
+  </table>
+ 
+
+<div class=" text-center" *ngFor="let product of productsDetail ">
+    
+    <div class="card mb-3" >
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="{{path}}{{product.imagePath}}" width="300" height="300"/>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">{{product.productName |uppercase}}</h5>
+              <p class="card-text">{{product.description}}</p>
+              <p class="card-text"><small class="text-muted">3 Dakika önce güncellendi.</small></p>
+            </div>
+            <div class="progress container" style="max-width: 540px;">
+                <div class="progress-bar progress-bar-striped" style="width:80%" >80%</div>
+            </div>
+            <br>
+
+            <div class="  form-group container  " >
+                <label for="biletsayisi" class=" labelrenk mb-3"> <strong>Bilet Fiyatı : 1₺ , ProductId: {{product.productId}} , CategoryId : {{product.categoryId}}</strong></label>
+                <div style="max-width: 150px; " class="container ">
+                  <input type="text" class="form-control text-center container " id="biletsayisi" placeholder="Bilet sayısı giriniz." style=" align-items: center;">
+
+                </div>
+               
+            </div>
+            <br>
+            <div class=" align-items-center">
+
+                <div class="btn-group mb-3  ">
+                    <button type="button" (click)="satinAl()" class="btn btn-danger " style=" width: 150px;">
+                        <strong>Çekilişe Katıl</strong> </button>
+
+                </div>
+
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+</div>
+
+
+<div class="content" >
+  <div class="col-md-4">
+      <div class="card">
+          <div class="card-header"><h5 class="title"> Bilet Al </h5></div>
+          <div class="card-body">
+
+              <form [formGroup]="biletAlForm"> 
+
+                <div class="mb-3">
+                    <label for="userId">userId </label>
+                <div class="form-group">
+                    <input  type="number" id="userId" formControlName="userId" class="form-control" name="userId"  /><br />
+                </div>
+                </div>
+                
+
+                  <div class="mb-3">
+                      <label for="productId">productId </label>
+                  <div class="form-group">
+                    <input  type="number" id="productId" formControlName="productId" class="form-control" name="productId"  /><br />
+                  </div>
+                  </div>
+
+
+                  <div class="mb-3">
+                      <label for="categoryId">categoryId</label>
+                  <div class="form-group">
+                      <input type="number" id="categoryId" formControlName="categoryId" class="form-control" placeholder="categoryId" />
+                  </div>
+                  </div>
+
+
+                  <div class="mb-3">
+                      <label for="numberOfTickets">numberOfTickets</label>
+                      <div class="form-group">
+                      <input type="number" id="numberOfTickets" formControlName="numberOfTickets" class="form-control" placeholder=" numberOfTickets" />
+                      </div>
+                  </div>
+
+              </form>
+          </div>
+          <div class="card-footer">
+              <button class="btn btn-fill btn-primary" (click)="add()">Ekle</button>
+          </div>
+          
+      </div>
+      
+  </div>
+ 
+</div>
+
+<div *ngFor="let user of users ">
+  <p>User Id : {{user.id}}</p>  
+</div>

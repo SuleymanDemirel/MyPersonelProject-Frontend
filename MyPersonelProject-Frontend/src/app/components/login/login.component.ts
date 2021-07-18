@@ -33,12 +33,15 @@ export class LoginComponent implements OnInit {
 
       this.authService.login(loginModel).subscribe(response=>{
         this.toastrService.success(response.message)
-        this.router.navigate(['products'])
+        
         localStorage.setItem("token",response.data.token)
         localStorage.setItem("expiration",response.data.expiration)
         localStorage.setItem("email",loginModel.email)
         localStorage.setItem("password",loginModel.password)
-        location.reload(); 
+        
+       
+        this.router.navigate(['products'])
+        location.reload();
       }, responseError=>{
         this.toastrService.error(responseError.error)
       })
